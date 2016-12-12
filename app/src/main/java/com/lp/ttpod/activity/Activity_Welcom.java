@@ -10,6 +10,6 @@ public class Activity_Welcom extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity__welcom);
+        setContentView(R.layout.activity_welcom);
     }
 }
