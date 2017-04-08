@@ -23,8 +23,8 @@ import org.xutils.view.annotation.ViewInject;
 import java.util.ArrayList;
 
 /** 717219917@qq.com  2016/12/14 0:26 */
-@ContentView(R.layout.activity_main)//主页面
-public class Activity_Main extends Activity_Base {
+@ContentView(R.layout.activity_main_tab)//主页面
+public class Activity_Main_tab extends Activity_Base {
 	@ViewInject(R.id.viewPager) private ViewPager viewPager;
 	@ViewInject(R.id.tab_game) private TextView tab_game;
 	@ViewInject(R.id.tab_app) private TextView tab_app;
@@ -73,30 +73,7 @@ public class Activity_Main extends Activity_Base {
 			}
             @Override public void onPageScrollStateChanged(int state) { }
 		});
-
-		tab_app.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View arg0) {
-				viewPager.setCurrentItem(0);
-			}
-		});
-		tab_game.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View arg0) {
-				viewPager.setCurrentItem(1);
-
-			}
-		});
-		tab_ceshi.setOnClickListener(new OnClickListener() {// ����
-
-					@Override
-					public void onClick(View arg0) {
-						viewPager.setCurrentItem(2);
-
-					}
-				});
+		
 		    int size=textViews.size();
 			for (int curr=0;curr<size;curr++)
 			{

@@ -23,7 +23,7 @@ public class Activity_Welcom extends Activity_Base {
         x.task().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Activity_Welcom.this,Activity_Main.class);
+                Intent intent = new Intent(Activity_Welcom.this,Activity_Main_tab.class);
                 startActivity(intent);
             }
         }, 2000);
@@ -31,7 +31,7 @@ public class Activity_Welcom extends Activity_Base {
 
     @Event(R.id.welcom_txt)
     private void welcom_txt(View v){
-        Intent intent = new Intent(this,Activity_Main.class);
+        Intent intent = new Intent(this,Activity_Main_tab.class);
         startActivity(intent);
     }
 
